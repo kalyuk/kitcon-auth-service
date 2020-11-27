@@ -1,0 +1,59 @@
+{
+  "name": "kitcon-auth-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist && mkdir ./dist && touch ./dist/server.js",
+    "start": "npm run clean &&npm-run-all -l -p build run",
+    "build": "webpack-cli --watch",
+    "run": "nodemon ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalyuk/kitcon-auth-service.git"
+  },
+  "author": "Dmitriy Kalyuk <kalyukdo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalyuk/kitcon-auth-service/issues"
+  },
+  "homepage": "https://github.com/kalyuk/kitcon-auth-service#readme",
+  "devDependencies": {
+    "@types/bluebird": "^3.5.33",
+    "@types/ioredis": "^4.17.5",
+    "@types/jsbn": "^1.2.29",
+    "@types/node": "^14.14.9",
+    "@types/qs": "^6.9.5",
+    "@types/uuid": "^8.3.0",
+    "@types/validator": "^13.1.0",
+    "@types/webpack-node-externals": "^2.5.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "uuid": "^8.3.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2",
+    "webpack-shell-plugin-next": "^1.2.0"
+  },
+  "dependencies": {
+    "class-transformer": "^0.3.1",
+    "class-validator": "^0.12.2",
+    "ioredis": "^4.17.3",
+    "jsbn": "^1.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^2.5.1",
+    "mysql": "^2.18.1",
+    "qs": "^6.9.4",
+    "secure-remote-password": "^0.3.1",
+    "sequelize": "^5.21.10",
+    "sequelize-typescript": "^1.1.0",
+    "srp6a": "^1.4.1",
+    "typeorm": "^0.2.29",
+    "universal-secure-random": "0.0.6"
+  }
+}

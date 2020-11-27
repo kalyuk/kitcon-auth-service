@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "lib": [
+            "dom",
+            "es2015",
+            "esnext"
+        ],
+        "skipLibCheck": true,
+        "module": "commonjs",
+        "moduleResolution": "Node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": false,
+        "noImplicitAny": false,
+        "target": "ESNext",
+        "paths": {
+            "@kitcon/core/*": [
+                "../kitcon-core/src/*"
+            ],
+            "@kitcon/ui/*": [
+                "../kitcon-ui/src/*"
+            ],
+            "@kitcon/node/*": [
+                "../kitcon-node/src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*",
+    ],
+}
